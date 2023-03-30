@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul {
+  list-style-type: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.body {
+  background-repeat: no-repeat;
+  background-size: contain;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.body-dark {
+  background-color: hsl(235, 21%, 11%);
+  background-image: url("images/bg-desktop-dark.jpg");
+}
+
+.body-light {
+  background-color: hsl(236, 33%, 92%);
+  background-image: url("images/bg-desktop-light.jpg");
+}
+
+.header-container {
+  width: 45%;
+  margin-top: 6rem;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header div:first-child {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header h1 {
   color: white;
+  letter-spacing: 10px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 1024px) and (min-width: 768px) {
+  .header-container {
+    margin-top: 2.5rem;
+    width: 70%;
   }
-  to {
-    transform: rotate(360deg);
+  .todo-footer {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .body {
+    padding: 0 1rem;
+  }
+
+  .header-container {
+    width: 100%;
+    margin-top: 2.5rem;
+  }
+
+  .body-dark {
+    background-image: url("images/bg-mobile-dark.jpg");
+  }
+
+  .body-light {
+    background-image: url("images/bg-mobile-light.jpg");
   }
 }

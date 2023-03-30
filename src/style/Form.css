@@ -1,0 +1,50 @@
+.form-container {
+  width: 100%;
+  height: 4.5rem;
+  margin-top: 3rem;
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.form-container-dark {
+  background-color: hsl(235, 24%, 19%);
+}
+
+.form-container-light {
+  background-color: hsl(0, 0%, 98%);
+}
+
+.form-container input {
+  width: 92%;
+  height: 4.5rem;
+  border: none;
+  outline: none;
+  float: right;
+  background: transparent;
+  font-size: 1.2rem;
+}
+
+.dark-input {
+  color: hsl(234, 39%, 85%) !important;
+}
+
+.light-input {
+  color: hsl(235, 19%, 35%) !important;
+}
+
+@media screen and (max-width: 540px) {
+  .form-container input {
+    width: 88%;
+  }
+  .form input {
+    width: 88%;
+    font-size: 20px;
+  }
+}
+
+@media screen and(max-width:320px) {
+  .form-container input {
+    width: 84%;
+  }
+}

@@ -1,0 +1,51 @@
+.todo-footer {
+  padding: 1rem;
+  color: hsl(233, 14%, 35%);
+  font-weight: 400;
+  font-size: 1rem;
+  border-radius: 0 0 5px 5px;
+}
+
+.todo-footer-dark {
+  background-color: hsl(235, 24%, 19%);
+}
+
+.todo-footer-light {
+  background-color: hsl(0, 0%, 98%);
+}
+
+.todo-footer button {
+  color: hsl(233, 14%, 35%);
+}
+
+.todo-footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.todo-footer li {
+  cursor: pointer;
+}
+
+.todo-footer ul div {
+  display: flex;
+  column-gap: 20px;
+}
+
+@media screen and (max-width: 540px) {
+  .todo-footer {
+    position: relative;
+  }
+
+  .todo-footer ul div {
+    position: absolute;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    width: 88%;
+    left: 0;
+    justify-content: center;
+    top: 5rem;
+    border-radius: 5px;
+  }
+}
