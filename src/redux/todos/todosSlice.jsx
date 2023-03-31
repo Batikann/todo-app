@@ -1,16 +1,28 @@
 import { createSlice, nanoid } from "@reduxjs/toolkit";
+const items =
+  localStorage.getItem("todos") !== null
+    ? JSON.parse(localStorage.getItem("todos"))
+    : [];
 
+const theme =
+  localStorage.getItem("theme") !== null
+    ? JSON.parse(localStorage.getItem("theme"))
+    : false;
 export const todosSlice = createSlice({
   name: "todos",
   initialState: {
-    items: [],
+    items: items,
     activeFilter: "All",
-    theme: false,
+    theme: theme,
   },
   reducers: {
     addTodo: {
       reducer: (state, action) => {
         state.items.push(action.payload);
+        localStorage.setItem(
+          "todos",
+          JSON.stringify(state.items.map((item) => item))
+        );
       },
       prepare: ({ todoText }) => {
         return {
@@ -26,11 +38,19 @@ export const todosSlice = createSlice({
       const { id } = action.payload;
       const item = state.items.find((item) => item.id === id);
       item.isCompleted = !item.isCompleted;
+      localStorage.setItem(
+        "todos",
+        JSON.stringify(state.items.map((item) => item))
+      );
     },
     deleteTodo: (state, action) => {
       const id = action.payload;
       const deleteTodo = state.items.filter((todo) => todo.id !== id);
       state.items = deleteTodo;
+      localStorage.setItem(
+        "todos",
+        JSON.stringify(state.items.map((item) => item))
+      );
     },
     changeActiveFilter: (state, action) => {
       state.activeFilter = action.payload;
@@ -38,10 +58,15 @@ export const todosSlice = createSlice({
     clearCompleted: (state) => {
       const filtered = state.items.filter((item) => item.isCompleted === false);
       state.items = filtered;
+      localStorage.setItem(
+        "todos",
+        JSON.stringify(state.items.map((item) => item))
+      );
     },
     changeTheme: (state) => {
       const defaultTheme = state.theme;
       state.theme = !defaultTheme;
+      localStorage.setItem("theme", JSON.stringify(state.theme));
     },
   },
 });
