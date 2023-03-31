@@ -1,19 +1,19 @@
 import "../style/Form.css";
-
-const Form = ({ todos, setTodos, inputText, setInputText, theme }) => {
-  const inputTextHandler = (e) => {
-    setInputText(e.target.value);
-  };
-
+import { useDispatch, useSelector } from "react-redux";
+import { useState } from "react";
+import { addTodo } from "../redux/todos/todosSlice";
+const Form = () => {
+  const [todoText, setTodoText] = useState("");
+  const theme = useSelector((state) => state.todos.theme);
   const submitTodoHandler = (e) => {
     e.preventDefault();
-    setTodos([
-      ...todos,
-      { text: inputText, isCompleted: false, id: Math.random() * 1000 },
-    ]);
-    setInputText("");
+    if (todoText) {
+      dispatch(addTodo({ todoText }));
+      setTodoText("");
+    }
   };
 
+  const dispatch = useDispatch();
   return (
     <div
       className={`form-container ${
@@ -23,8 +23,8 @@ const Form = ({ todos, setTodos, inputText, setInputText, theme }) => {
       <p className="circle"></p>
       <form onSubmit={submitTodoHandler}>
         <input
-          onChange={inputTextHandler}
-          value={inputText}
+          onChange={(e) => setTodoText(e.target.value)}
+          value={todoText}
           className={theme ? "dark-input" : "light-input"}
         />
       </form>

@@ -1,13 +1,13 @@
 import "../style/TodoFooter.css";
+import { itemsValue } from "../redux/todos/todosSlice";
+import { useSelector, useDispatch } from "react-redux";
+import { changeActiveFilter, clearCompleted } from "../redux/todos/todosSlice";
 
-function TodoFooter({ todos, setStatus, status, setTodos, theme }) {
-  const statusHandler = (e) => {
-    setStatus(e.target.textContent);
-  };
-
-  const clearComplete = () => {
-    setTodos([]);
-  };
+function TodoFooter() {
+  const dispatch = useDispatch();
+  const activeValue = useSelector((state) => state.todos.activeFilter);
+  const theme = useSelector((state) => state.todos.theme);
+  const items = useSelector(itemsValue);
   return (
     <div>
       <div
@@ -17,11 +17,9 @@ function TodoFooter({ todos, setStatus, status, setTodos, theme }) {
       >
         <ul>
           <li>
-            {todos.filter((todo) => todo.isCompleted == false).length}
-            <span style={{ marginLeft: "10px" }}>
-              {todos.filter((todo) => todo.isCompleted == false).length > 1
-                ? "items left"
-                : "item left"}
+            {items}
+            <span style={{ marginLeft: "5px" }}>
+              {items > 1 ? "items left" : "item left"}
             </span>
           </li>
           <div
@@ -32,15 +30,15 @@ function TodoFooter({ todos, setStatus, status, setTodos, theme }) {
             {["All", "Active", "Completed"].map((statu) => (
               <li key={statu}>
                 <button
-                  className={status == statu ? "active-link" : ""}
-                  onClick={statusHandler}
+                  className={activeValue === statu ? "active-link" : ""}
+                  onClick={() => dispatch(changeActiveFilter(statu))}
                 >
                   {statu}
                 </button>
               </li>
             ))}
           </div>
-          <li onClick={clearComplete}>Clear Completed</li>
+          <li onClick={() => dispatch(clearCompleted())}>Clear Completed</li>
         </ul>
       </div>
     </div>

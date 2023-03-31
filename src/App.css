@@ -58,10 +58,10 @@ ul {
   letter-spacing: 10px;
 }
 
-@media (max-width: 1024px) and (min-width: 768px) {
+@media (max-width: 1439px) and (min-width: 539px) {
   .header-container {
     margin-top: 2.5rem;
-    width: 70%;
+    width: 80%;
   }
   .todo-footer {
     font-size: 0.8rem;

@@ -3,6 +3,8 @@ import cross from "../images/icon-cross.svg";
 import check from "../images/icon-check.svg";
 import "../style/Todo.css";
 
+import { useSelector } from "react-redux";
+
 function Todo({ todoText, setTodos, todos, todo, theme }) {
   const deleteHandler = () => {
     setTodos(todos.filter((el) => el.id != todo.id));
@@ -33,21 +35,28 @@ function Todo({ todoText, setTodos, todos, todo, theme }) {
   };
 
   return (
-    <div className={`todo ${theme ? "todo-dark" : "todo-light"}`}>
-      <p
-        className={`circle ${todo.isCompleted ? "completed" : ""}`}
-        onClick={completeHandler}
-      >
-        <img
-          className={`${todo.isCompleted ? "active" : ""}`}
-          src={check}
-        ></img>
-      </p>
-      <p className={`todo-text ${checkTheme()} `}>{todoText}</p>
-      <button className="close-btn" onClick={deleteHandler}>
-        <img src={cross} />
-      </button>
-    </div>
+    <>
+      {/* {f.map((todo) => {
+        <div
+          className={`todo ${theme ? "todo-dark" : "todo-light"}`}
+          key={todo.id}
+        >
+          <p
+            className={`circle ${todo.isCompleted ? "completed" : ""}`}
+            onClick={completeHandler}
+          >
+            <img
+              className={`${todo.isCompleted ? "active" : ""}`}
+              src={check}
+            ></img>
+          </p>
+          <p className={`todo-text ${checkTheme()} `}>{todo.todoText}</p>
+          <button className="close-btn" onClick={deleteHandler}>
+            <img src={cross} />
+          </button>
+        </div>;
+      })} */}
+    </>
   );
 }
 
