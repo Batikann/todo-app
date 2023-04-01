@@ -14,8 +14,8 @@ npm start
 “`
 
 <h3>Dark Mode Desktop-Mobile</h3>
-![image](https://user-images.githubusercontent.com/71382413/229274782-6542bb78-f0e6-4ac2-bb27-39b1bf860266.png)
-![image](https://user-images.githubusercontent.com/71382413/229274829-30b6ef38-2e5a-47f2-a24c-4237795ea08c.png)
+<img src="https://user-images.githubusercontent.com/71382413/229274782-6542bb78-f0e6-4ac2-bb27-39b1bf860266.png" alt="dark-mode-desktop"/>
+<img src="https://user-images.githubusercontent.com/71382413/229274829-30b6ef38-2e5a-47f2-a24c-4237795ea08c.png" alt="dark-mode-mobile"/>
 
 <h3>Light Mode Desktop-Mobile</h3>
 ![image](https://user-images.githubusercontent.com/71382413/229274903-6be213c4-ceb5-48bf-9415-cdaed7fa5906.png)
