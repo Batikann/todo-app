@@ -23,6 +23,6 @@ npm start
 <img src="https://user-images.githubusercontent.com/71382413/229274903-6be213c4-ceb5-48bf-9415-cdaed7fa5906.png" alt="light-mode-desktop" />
 
 <h3>Light Mode Mobile</h3>
-<img src="https://user-images.githubusercontent.com/71382413/229274928-b42326c6-a5f7-4530-a194-21df5c505232.png" alt="light-mode-desktop"/>
+<img src="https://user-images.githubusercontent.com/71382413/229276131-9e9f1eb4-0701-4e1a-b04c-718f2bc7f023.png" alt="light-mode-mobile"/>
 
 ![todoapp](https://user-images.githubusercontent.com/71382413/229275838-c88b816b-d958-4c39-be0e-93068a20cab3.gif)
