@@ -12,6 +12,7 @@ Projeyi indirdikten sonra aşağıda ki adımları takip ederek çalıştırabil
 “`
 cd todo-app
 “`
+
 “`
 npm install
 “`
