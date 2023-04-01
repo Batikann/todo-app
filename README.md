@@ -8,18 +8,11 @@ Live Demo ==> https://todoapp-patikadev.netlify.app
 
 Projeyi indirdikten sonra aşağıda ki adımları takip ederek çalıştırabilirsiniz.
 
+1-) cd todo-app
 
-“`
-cd todo-app
-“`
+2-) npm install
 
-“`
-npm install
-“`
-
-“`
-npm start
-“`
+3-) npm start
 
 <h3>Dark Mode Desktop</h3>
 <img src="https://user-images.githubusercontent.com/71382413/229274782-6542bb78-f0e6-4ac2-bb27-39b1bf860266.png" alt="dark-mode-desktop"/>
