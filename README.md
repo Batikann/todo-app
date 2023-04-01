@@ -21,6 +21,4 @@ npm start
 ![image](https://user-images.githubusercontent.com/71382413/229274903-6be213c4-ceb5-48bf-9415-cdaed7fa5906.png)
 ![image](https://user-images.githubusercontent.com/71382413/229274928-b42326c6-a5f7-4530-a194-21df5c505232.png)
 
-
-
-![todoapp](https://user-images.githubusercontent.com/71382413/229275330-7f38f2e5-284b-4be5-8c21-509abc940649.gif)
+![todoapp](https://user-images.githubusercontent.com/71382413/229275641-453551b4-1ce8-4a00-9394-0b1b0b5a1bb5.gif)
