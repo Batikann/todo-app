@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { changeTheme } from "../redux/todos/todosSlice";
 
 export default function Header() {
+  //Burada ki tek acamımız temayı dispatch edip redux store'a yollamak.
   const theme = useSelector((state) => state.todos.theme);
   const dispatch = useDispatch();
   return (
