@@ -13,9 +13,12 @@ npm install
 npm start
 “`
 
-<h3>Dark Mode Desktop-Mobile</h3>
+<h3>Dark Mode Desktop</h3>
 <img src="https://user-images.githubusercontent.com/71382413/229274782-6542bb78-f0e6-4ac2-bb27-39b1bf860266.png" alt="dark-mode-desktop"/>
-<img src="https://user-images.githubusercontent.com/71382413/229274829-30b6ef38-2e5a-47f2-a24c-4237795ea08c.png" alt="dark-mode-mobile"/>
+
+<h3>Dark Mode Mobile</h3>
+<img src="[https://user-images.githubusercontent.com/71382413/229274829-30b6ef38-2e5a-47f2-a24c-4237795ea08c.png](https://user-images.githubusercontent.com/71382413/229275715-2c8bf547-c3cb-41a6-82a7-ef64514704bf.png)" alt="dark-mode-mobile"/>
+![image](https://user-images.githubusercontent.com/71382413/229275715-2c8bf547-c3cb-41a6-82a7-ef64514704bf.png)
 
 <h3>Light Mode Desktop-Mobile</h3>
 ![image](https://user-images.githubusercontent.com/71382413/229274903-6be213c4-ceb5-48bf-9415-cdaed7fa5906.png)
