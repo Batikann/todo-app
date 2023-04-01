@@ -19,8 +19,10 @@ npm start
 <h3>Dark Mode Mobile</h3>
 <img src="https://user-images.githubusercontent.com/71382413/229275715-2c8bf547-c3cb-41a6-82a7-ef64514704bf.png" alt="dark-mode-mobile"/>
 
-<h3>Light Mode Desktop-Mobile</h3>
-![image](https://user-images.githubusercontent.com/71382413/229274903-6be213c4-ceb5-48bf-9415-cdaed7fa5906.png)
-![image](https://user-images.githubusercontent.com/71382413/229274928-b42326c6-a5f7-4530-a194-21df5c505232.png)
+<h3>Light Mode Desktop</h3>
+<img src="https://user-images.githubusercontent.com/71382413/229274903-6be213c4-ceb5-48bf-9415-cdaed7fa5906.png" alt="light-mode-desktop" />
 
-![todoapp](https://user-images.githubusercontent.com/71382413/229275641-453551b4-1ce8-4a00-9394-0b1b0b5a1bb5.gif)
+<h3>Light Mode Mobile</h3>
+<img src="https://user-images.githubusercontent.com/71382413/229274928-b42326c6-a5f7-4530-a194-21df5c505232.png" alt="light-mode-desktop"/>
+
+![todoapp](https://user-images.githubusercontent.com/71382413/229275838-c88b816b-d958-4c39-be0e-93068a20cab3.gif)
