@@ -2,7 +2,7 @@
 
 Live Demo ==> https://todoapp-patikadev.netlify.app
 
-<p>Projemde Frontend geliştirme aracı olarak react kullandım.State yönetimini redux kullanarak yaptım.Proje Full responsive bir yapıya sahiptir.Light ve dark mod ve localStorage desteği projede mevcuttur.Classlarımı daha iyi yönetmek için classNames paketini kullandım</p>
+<p>Projemde Frontend geliştirme aracı olarak react kullandım.State yönetimini redux kullanarak yaptım.Proje Full responsive bir yapıya sahiptir.Light ve dark mod ve localStorage desteği projede mevcuttur.Classlarımı daha iyi yönetmek için classNames paketini kullandım.</p>
 
 <h2>Projeyi Nasıl Kurarım ? </h2>
 
